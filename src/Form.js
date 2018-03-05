@@ -24,7 +24,8 @@ class Form extends React.Component {
 	validateFirstName(newValue) {
 		if (newValue.length != 0) {
 			this.setState({
-				firstnameValid: true
+				firstnameValid: true,
+				firstnameError: false
 			});
 		} else {
 			this.setState({
@@ -36,7 +37,8 @@ class Form extends React.Component {
 	validateLastName(newValue) {
 		if (newValue.length != 0) {
 			this.setState({
-				lastnameValid: true
+				lastnameValid: true,
+				lastnameError: false
 			});
 		} else {
 			this.setState({
@@ -48,7 +50,8 @@ class Form extends React.Component {
 	validateEmail(newValue) {
 		if (newValue.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
 			this.setState({
-				emailValid: true
+				emailValid: true,
+				emailError: false
 			});
 		} else {
 			this.setState({
