@@ -1,0 +1,19 @@
+.input-firstname {
+	text-transform: capitalize;
+}
+
+.input-lastname {
+	text-transform: uppercase;
+}
+
+label {
+	text-transform: capitalize;
+}
+
+.hidden {
+	display: none;
+}
+
+.input-error-message {
+	color: red;
+}
